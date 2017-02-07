@@ -36,7 +36,7 @@ while the HQL script count the number of votes.</br>
       <i>hadoop fs -cat setup.sh | exec sh</i>
   </li>
   <li>Execute the HiveQL script:
-    <br><i>hive -f s3://processobynd/scripts/scripteleicao.hql</i></br>
+    <br><i>hive -f s3://[s3_bucket]/scripts/scripteleicao.hql</i></br>
   </li>
   <li>The result will then be copied to the output folder in your s3 bucket(something like "000000_0").
   You can download it and see the results.</li>
